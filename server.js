@@ -4,7 +4,7 @@ const path = require('path')
 const server = require('http').createServer(app)
 
 // const cors = require('cors')
-const port = process.env.PORT || 3000
+const port = process.env.PORT || 3001
 
 // const corsOpts = { origin: '*', optionsSuccessStatus: 200}
 // app.use(cors(corsOpts))
@@ -16,7 +16,7 @@ server.listen(port, () => { console.log('Servidor de testes ativo na porta %d', 
 app.use(express.static(__dirname +'/dist/jitsi'))
 app.get('/*', (req, res) =>
 {
-    res.sendFile(__dirname + '/index.html')
+    res.sendFile(path.join(__dirname + '/index.html'))
 })
 
 
