@@ -12,10 +12,12 @@ export class AppComponent implements OnInit, AfterViewInit
 {
   
     domain: string = "meet.jit.si"; // For self hosted use your domain
-    room: any;
-    options: any;
-    api: any;
-    user: any;
+    room: any
+    options: any
+    api: any
+    user: any
+    form_altura: any
+    form_largura: any
 
     // For Custom Controls
     isAudioMuted = false;
@@ -34,8 +36,8 @@ export class AppComponent implements OnInit, AfterViewInit
         this.options = 
         {
             roomName: this.room,
-            width: 100,
-            height: 100,
+            // width: this.form_largura,
+            // height: this.form_altura,
             configOverwrite: { prejoinPageEnabled: false },
             interfaceConfigOverwrite: {
                 // overwrite interface properties
