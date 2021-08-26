@@ -13,7 +13,7 @@ server.listen(port, () => { console.log('Servidor de testes ativo na porta %d', 
 
 // Routing
 // app.use(express.static(path.join(__dirname + '/dist/botcryptos')) )
-app.use(express.static('public'))
+app.use(express.static(__dirname +'/dist/jitsi'))
 app.get('/*', (req, res) =>
 {
     res.sendFile(__dirname + '/index.html')
