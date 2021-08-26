@@ -34,8 +34,8 @@ export class AppComponent implements OnInit, AfterViewInit
         this.options = 
         {
             roomName: this.room,
-            width: 900,
-            height: 500,
+            width: 100,
+            height: 100,
             configOverwrite: { prejoinPageEnabled: false },
             interfaceConfigOverwrite: {
                 // overwrite interface properties
